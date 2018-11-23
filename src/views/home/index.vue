@@ -14,19 +14,20 @@ export default {
   data() {
     return {
       greeter: "Hello, Vue!",
-      searchVal: ''
+      searchVal: "",
+      show: true
     };
   },
   components: {
     search
   },
   watch: {
-    searchVal (val) {
-      console.log(val)
+    searchVal(val) {
+      console.log(val);
     }
   },
   created() {
-    console.log("发送请求4444444444444");
+    this.$toast('提示信息提示信息提示信息提示信息提示信息提示信息提示信息提示信息提示信息')
     this.$http
       .getApiXxx()
       .then(response => {

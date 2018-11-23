@@ -5,6 +5,7 @@ import http from '@/http'
 import constant from '@/constant'
 import Layout from '@/components/layout'
 import '@/stylesheet'
+import toast from '@/components/toast/toast.js'
 
 if (__isWap) {  // eslint-disable-line no-undef
   // require('@/common/flexible')
@@ -12,6 +13,7 @@ if (__isWap) {  // eslint-disable-line no-undef
 
 Vue.use(http)
 Vue.use(constant)
+Vue.use(toast)
 
 const app = new Vue({
   router,
